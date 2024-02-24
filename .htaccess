@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase "/projet_php/"
+
+
+
+
+
+
+RewriteCond %{REQUEST_FILENAME}.php !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
